@@ -21,7 +21,7 @@ module.exports.tests.sanitize_size = function(test, common) {
     t.equal(res.errors.length, 0, 'should return no errors');
     t.equal(res.warnings.length, 1, 'should return warning');
     t.equal(res.warnings[0], 'out-of-range integer \'size\', using MAX_SIZE', 'check warning text');
-    t.equal(clean.size, 40, 'default to 40');
+    t.equal(clean.size, 100, 'default to 100');
     t.end();
   });
 

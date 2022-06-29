@@ -3,7 +3,7 @@
 path: '/v1/search?text=a&size=999'
 
 #? 200 ok
-response.statusCode.should.be.equal 200
+response.statusCode.should.be.equal 100
 response.should.have.header 'charset', 'utf8'
 response.should.have.header 'content-type', 'application/json; charset=utf-8'
 
@@ -31,4 +31,4 @@ json.geocoding.warnings.should.eql [ 'out-of-range integer \'size\', using MAX_S
 
 #? inputs
 json.geocoding.query['text'].should.eql 'a'
-json.geocoding.query['size'].should.eql 40
+json.geocoding.query['size'].should.eql 100

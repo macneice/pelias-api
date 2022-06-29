@@ -1,6 +1,6 @@
 const _ = require('lodash');
 const MIN_SIZE = 1;
-const MAX_SIZE = 200;
+const MAX_SIZE = 100;
 const DEFAULT_SIZE = 10;
 
 // validate inputs, convert types and apply defaults
